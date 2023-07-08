@@ -1,0 +1,483 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 15px;
+    font-weight: 500;
+    color: #252b42;
+    font-family: "Roboto", sans-serif;
+    background-color: #fafafa;
+}
+
+---------------------------------------------------------------------------------------------------
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+}
+
+._ibg {
+    position: relative;
+  }
+  ._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+._container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+    text-align: center;
+}
+.header__info {
+    background-color: #000000;
+    padding: 7px auto;
+}
+.info__text {
+    color: #FBFBFB;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 15px;
+    padding: 7px 0 7px 0;
+}
+.header__main {
+    background-color: #FBFBFB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo {
+    padding: 15px 30px 15px 11px;
+}
+
+.header__menu {
+}
+.menu {
+    left: -4%;
+    position: relative;
+}
+.menu__list {
+    flex-wrap: wrap;
+  display: flex;
+}
+.menu__item {
+}
+.menu__item:not(:last-child) {
+    padding: 0 22px 0 0;
+}
+.menu__link {
+    color: #000000;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 1px;
+}
+.header__buttons {
+    padding: 0px 6px 0 0;
+}
+.buttons {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.buttons__avatar_img:hover{
+    cursor: pointer;
+}
+.buttons__cart_img:hover{
+    cursor: pointer;
+}
+.buttons__avatar {
+    margin: 0 11px 0 0;
+}
+.buttons__avatar_img {
+}
+.buttons__cart {
+    margin: 0 14px 0 0;
+}
+.buttons__cart_img {
+}
+
+/* Main */
+
+.page {
+    flex: 1 1 auto;
+}
+.page__main-info {
+    position: relative;
+}
+.main-info {
+    height: 100%;
+}
+.main-info__block {
+    height: 100%;
+    position: relative;
+    max-width: 570px;
+    z-index: 1;
+    margin: 0 auto;
+    text-align: center;
+    padding: 53px 15px 502px 15px;
+}
+.main-info__title {
+}
+.title {
+    text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
+font-size: 44px;
+line-height: 50.625px;
+font-weight: 700;
+}
+.main-info__info {
+}
+.text {
+    padding: 14px 0 7px 0;
+    line-height: 18.75px;
+letter-spacing: 1px;
+font-size: 15px;
+}
+.main-info__buttons {
+}
+.main-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.main-buttons__revs, .main-buttons__boards {
+    text-align: center;
+    border-radius: 35px;
+    background: #FF4A32;
+    align-items: center;
+    width: 201px;
+height: 33px;
+color: #fff;
+margin: 15px 12px;
+line-height: 22.5px;
+font-size: 14px;
+transition: all 0.3s ease 0s;
+}
+.main-buttons__revs:hover, .main-buttons__boards:hover{
+    cursor: pointer;
+    background: #fff;
+    color: #FF4A32;
+}
+.main-buttons__boards {
+}
+.page__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right;
+       object-position: right;
+}
+
+  @media (min-width: 1250px) {._ibg img {
+    width: 100%;
+  }
+}
+
+/* Parthners */
+
+.page__parthners {
+    min-height: 83px;
+    width: 100%;
+    background-color: #000000;
+}
+.page__parthners-container {
+    min-height: 43px;
+}
+.page__parthners-body {
+}
+.body-items {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
+    padding: 10px 15px;  
+}
+
+@media (max-width: 1013px) {
+    .body-items {
+        flex-wrap: wrap;  
+    } 
+}
+
+/* What is better */
+
+.page__whatisbetter {
+}
+.whatisbetter {
+}
+.whatisbetter__container {
+}
+.whatisbetter__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 700px;
+    padding: 52px 0 0 0;
+}
+.section-text {
+}
+.section-text__main {
+    line-height: 36px;
+    font-size: 32px;
+    letter-spacing: 0%;
+    padding-bottom: 17px;
+}
+.section-text__about-text {
+    font-size: 15px;
+    line-height: 18.75px;
+    letter-spacing: 0%;
+}
+.section-text__line {
+    margin: 25.11px 0 0 0;
+    content: " ";
+    width: 70px;
+    height: 2px;
+    background: #CFCFCF;
+    display: inline-block;
+}
+
+.whatisbetter__change-img {
+    display: flex;
+    padding: 44.5px 0 0 0;
+    margin: 0 10px 20px 10px;
+}
+@media (max-width: 596px) {
+    .change-img {
+        flex-wrap: wrap;
+    } 
+}
+.change-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.change-img__column {
+    background: #000000;
+    margin: 0 0 20px 0;
+}
+.change-img__column img:hover {
+    opacity: 0.7;
+    transition: all 0.3s ease 0s;
+}
+@media (min-width: 597px) {
+     .change-img__column:not(:last-child) {
+    margin-right: 30px;
+}
+}
+
+/* Electronic skateboards */
+
+.page__elskate {
+}
+.elstake {
+}
+.elstake__main {
+}
+.elskate__body {
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    max-width: 564px;
+    height: 199px;
+    padding: 44px 10px 693px 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+.elskate__high {
+    font-size: 15px;
+    font-weight: 400;
+line-height: 18.75px;
+letter-spacing: 1px;
+padding: 0 0 11px 0;
+color: #000000;
+}
+.elskate__main {
+    font-weight: 700;
+line-height: 50.625px;
+font-size: 45px;
+padding: 0 0 15px 0;
+color: #000000;
+}
+.elskate__about {
+    font-weight: 400;
+line-height: 18.75px;
+letter-spacing: 1px;
+font-size: 15px;
+color: #000000;
+padding: 0 0 25px 0;
+}
+
+.elskate__button {
+text-align: center;
+border-radius: 35px;
+background: #FF4A32;
+align-items: center;
+width: 201px;
+height: 33px;
+color: #fff;
+margin: 15px 12px;
+line-height: 22.5px;
+font-size: 14px;
+transition: all 0.3s ease 0s;
+}
+.elskate__button:hover{
+cursor: pointer;
+background: #fff;
+color: #FF4A32;
+}
+.elskate__background {
+    position: absolute;
+    width: 100%;
+    height: 736px;
+    top: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right;
+       object-position: right;
+}
+
+/* Boosted Rev */
+
+.page__boostedrev {
+}
+.boostedrev {
+}
+.boostedrev__body {
+    padding: 45px 15px;
+    width: 100%;
+}
+.body-boosted {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.body-boosted__firstimg{
+    padding: 0 20px 0 10px;
+}
+.body-boosted__firstimg img{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+
+}
+.body-boosted__secondimg {
+    padding: 0 40px 0 0;
+}
+.body-boosted__secondimg img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+
+}
+.bodyboosted__info {
+    width: 100%;
+    height: 100%;
+    flex: 1 1 33.33333%;
+}
+.bodyboosted__header {
+    color: #000;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 38.4px;
+padding-bottom: 22px;
+}
+.bodyboosted__about {
+    color: #000;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 22.5px;
+padding-bottom: 22px;
+}
+.bodyboosted__button {
+    width: 101px;
+height: 33px;
+border-radius: 35px;
+background: #FF4A32;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 22.5px;
+text-align: center;
+color: #fff;
+transition: all 0.3s ease 0s;
+}
+
+.bodyboosted__button:hover{
+    color: #FF4A32;
+    background: #fff;
+    cursor: pointer;
+    border: 2px solid #FF4A32;
+}
+@media (max-width: 893px) {
+    .body-boosted {
+        flex-wrap: wrap;
+    }
+    .body-boosted__firstimg{
+        flex: 0 1 48%; 
+        padding: 0 2% 15px 0; 
+    }
+
+    .body-boosted__secondimg{
+        flex: 0 1 48%;
+        padding: 0 0 15px 2%;
+    }
+    .bodyboosted__info{
+        flex: 1 1 100%;
+    }
+}
