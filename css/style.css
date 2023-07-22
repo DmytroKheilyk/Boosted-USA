@@ -699,45 +699,128 @@ line-height: 150%;
     .advantages__item:not(:last-child){
         padding: 0 0 70px 0;
 }
+}
 
 /* Footer */
 
-.footer__container {
+.aboutboosted__container {
 }
 ._container {
 }
 .footer__body {
 }
 .footer__aboutboosted {
+    background-color: #F7F7F7;
 }
 .aboutboosted {
+}
+.aboutboosted__body {
+    display: flex;
+    padding: 50px 50px 50px 50px;
 }
 .aboutboosted__logo {
 }
 .aboutboosted__explore {
+    padding: 0 0 0 240px;
 }
 .aboutboosted__titleexplore {
+    padding: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
 }
 .aboutboosted__list {
+    font-size: 13px;
+    font-weight: 400;
+line-height: 161.538%;
+white-space: nowrap;
+}
+.aboutboosted__list a {
+    color: #000000;
+}
+.aboutboosted__list a:hover {
+    text-decoration: underline;
 }
 .aboutboosted__aboutus {
+    padding: 0 0 0 256px;
 }
 .aboutboosted__title {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 157.895%;
+    padding: 0 0 12px 0;
 }
 .aboutboosted__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
 }
 .aboutboosted__adress {
+    padding: 19px 0 0 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+@media (max-width: 1051px) {
+    .aboutboosted__explore {
+        padding: 0 0 0 100px;
+    }
+    .aboutboosted__aboutus {
+        padding: 0 0 0 140px;
+    }
+}
+@media (max-width: 766px) {
+    .aboutboosted__body {
+        flex-wrap: wrap;
+    }
+    .aboutboosted__explore {
+        padding: 0 0 15px 100px;
+    }
+    .aboutboosted__aboutus {
+        padding: 0 0 0 10px;    }
+}
+@media (max-width: 496px) {
+    .aboutboosted__explore {
+        padding: 0 0 15px 10px;
+    }
 }
 .footer__copiyng {
 }
 .copiyng {
+}
+.copiyng__body {
     display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
 }
 .copiyng__info {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 144.231%;
+    padding: 0 15px 0 0;
 }
 .copiyng__anycolor {
+    font-size: 12px;
+    color: #FF4A32;
+    line-height: 156.25%;
+    font-weight: 400;
 }
 .copiyng__pay {
+    display: flex;
 }
 .copiyng__paysystem {
+}
+@media (max-width: 857px) {
+    .copiyng__body {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        flex: 1 1 100%;
+    }
+    .copiyng__info {
+        /* padding: 0 0 15px 0; */
+        margin: 0 auto;
+    }
+    .copiyng__pay {
+        margin: 0 auto; 
+    }
 }
